@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.integration.InsumoControllerIntegration" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T23:40:56" hostname="DESKTOP-U8E734G" time="0.056">
+  <properties/>
+  <testcase name="testBajoStock()" classname="com.utn.elbuensabor.integration.InsumoControllerIntegration" time="0.056"/>
+  <system-out><![CDATA[Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select i1_0.id,i1_0.denominacion,i1_0.fecha_alta,i1_0.fecha_baja,i1_0.fecha_modificacion,i1_0.precio_compra,i1_0.id_rubro_insumo,i1_0.stock_actual,i1_0.stock_minimo,i1_0.id_unidad_medida,i1_0.url_imagen from insumo i1_0 where i1_0.stock_actual<=(i1_0.stock_minimo*1.2) offset ? rows fetch first ? rows only
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

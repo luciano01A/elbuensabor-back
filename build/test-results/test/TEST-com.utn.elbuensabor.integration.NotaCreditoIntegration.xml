@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.integration.NotaCreditoIntegration" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T23:40:56" hostname="DESKTOP-U8E734G" time="0.042">
+  <properties/>
+  <testcase name="testMovimientos()" classname="com.utn.elbuensabor.integration.NotaCreditoIntegration" time="0.042"/>
+  <system-out><![CDATA[Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: insert into nota_credito (cliente_id,factura_id,fecha_alta,fecha_baja,fecha_modificacion,total_monto,id) values (?,?,?,?,?,?,default)
+Hibernate: select sum(n1_0.total_monto) from nota_credito n1_0 where n1_0.fecha_alta between ? and ?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ProductoControllerIntegration</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ProductoControllerIntegration</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.utn.elbuensabor.integration.html">com.utn.elbuensabor.integration</a> &gt; ProductoControllerIntegration</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.463s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">77%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testGetAll()"></a>
+<h3 class="failures">testGetAll()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: JSON path &quot;$[1].denominacion&quot;
+Expected: is &quot;Fideos&quot;
+     but: was &quot;Pizza&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.utn.elbuensabor.integration.ProductoControllerIntegration.testGetAll(ProductoControllerIntegration.java:220)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testGetAllWithPageable()"></a>
+<h3 class="failures">testGetAllWithPageable()</h3>
+<span class="code">
+<pre>java.lang.AssertionError: JSON path &quot;$.content[0].denominacion&quot;
+Expected: is &quot;Fideos&quot;
+     but: was null
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.utn.elbuensabor.integration.ProductoControllerIntegration.testGetAllWithPageable(ProductoControllerIntegration.java:245)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testBuscar()</td>
+<td class="success">0.033s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testDelete()</td>
+<td class="success">0.044s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testGetAll()</td>
+<td class="failures">0.062s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testGetAllWithPageable()</td>
+<td class="failures">0.076s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testGetOne()</td>
+<td class="success">0.019s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPorRubro()</td>
+<td class="success">0.036s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRanking()</td>
+<td class="success">0.099s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSave()</td>
+<td class="success">0.053s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testUpdate()</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into rubro_producto (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into detalle_factura (cantidad,id_factura,fecha_alta,fecha_baja,fecha_modificacion,id_producto,subtotal,id) values (?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,p1_0.id_receta,p1_0.id_rubro_producto,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 join rubro_producto r1_0 on r1_0.id=p1_0.id_rubro_producto,detalle_factura d1_0 join factura f1_0 on f1_0.id=d1_0.id_factura where d1_0.id_producto=p1_0.id and r1_0.denominacion in (?) and f1_0.fecha_facturacion between ? and ? offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,p1_0.id_receta,p1_0.id_rubro_producto,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 order by p1_0.denominacion offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select count(p1_0.id) from producto p1_0
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/productos/producto/paged
+       Parameters = {page=[0], size=[1], sort=[denominacion,asc]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.utn.elbuensabor.controllers.productos.ProductoController
+           Method = com.utn.elbuensabor.controllers.productos.ProductoController#getAll(Pageable)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;content&quot;:[{&quot;id&quot;:3,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:null,&quot;descripcion&quot;:null,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:null,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;subRubro&quot;:[],&quot;denominacion&quot;:&quot;RP1&quot;},&quot;receta&quot;:null}],&quot;pageable&quot;:{&quot;pageNumber&quot;:0,&quot;pageSize&quot;:1,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;offset&quot;:0,&quot;unpaged&quot;:false,&quot;paged&quot;:true},&quot;totalPages&quot;:5,&quot;totalElements&quot;:5,&quot;last&quot;:false,&quot;size&quot;:1,&quot;number&quot;:0,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;numberOfElements&quot;:1,&quot;first&quot;:true,&quot;empty&quot;:false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,p1_0.id_receta,p1_0.id_rubro_producto,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 where p1_0.denominacion like ? escape '' offset ? rows fetch first ? rows only
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select count(*) from producto p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,r1_0.id,r1_0.descripcion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r3_0.id,r3_0.denominacion,r3_0.fecha_alta,r3_0.fecha_baja,r3_0.fecha_modificacion,r3_0.id_rubro_padre,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 left join receta r1_0 on r1_0.id=p1_0.id_receta left join rubro_producto r2_0 on r2_0.id=p1_0.id_rubro_producto left join rubro_producto r3_0 on r3_0.id=r2_0.id_rubro_padre where p1_0.id=?
+Hibernate: delete from producto where id=?
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,r1_0.id,r1_0.descripcion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r3_0.id,r3_0.denominacion,r3_0.fecha_alta,r3_0.fecha_baja,r3_0.fecha_modificacion,r3_0.id_rubro_padre,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 left join receta r1_0 on r1_0.id=p1_0.id_receta left join rubro_producto r2_0 on r2_0.id=p1_0.id_rubro_producto left join rubro_producto r3_0 on r3_0.id=r2_0.id_rubro_padre where p1_0.id=?
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,p1_0.id_receta,p1_0.id_rubro_producto,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0
+Hibernate: select r1_0.id,r1_0.descripcion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion from receta r1_0 where r1_0.id=?
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+Hibernate: select d1_0.id_receta,d1_0.id,d1_0.cantidad,d1_0.costo,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,i1_0.id,i1_0.denominacion,i1_0.fecha_alta,i1_0.fecha_baja,i1_0.fecha_modificacion,i1_0.precio_compra,r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre,i1_0.stock_actual,i1_0.stock_minimo,u1_0.id,u1_0.abreviatura,u1_0.denominacion,u1_0.fecha_alta,u1_0.fecha_baja,u1_0.fecha_modificacion,i1_0.url_imagen from detalle_receta d1_0 left join insumo i1_0 on i1_0.id=d1_0.id_insumo left join rubro_insumo r1_0 on r1_0.id=i1_0.id_rubro_insumo left join rubro_insumo r2_0 on r2_0.id=r1_0.id_rubro_padre left join unidad_medida u1_0 on u1_0.id=i1_0.id_unidad_medida where d1_0.id_receta=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_insumo s1_0 where s1_0.id_rubro_padre=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_insumo s1_0 where s1_0.id_rubro_padre=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/productos/producto
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.utn.elbuensabor.controllers.productos.ProductoController
+           Method = com.utn.elbuensabor.controllers.productos.ProductoController#getAll()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = [{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;puré de papa&quot;,&quot;descripcion&quot;:null,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:1234.00,&quot;costo&quot;:500.00,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;subRubro&quot;:[],&quot;denominacion&quot;:&quot;acompañamiento&quot;},&quot;receta&quot;:{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;detalles&quot;:[{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;cantidad&quot;:5.00,&quot;insumo&quot;:{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;papa&quot;,&quot;urlImagen&quot;:null,&quot;precioCompra&quot;:800.00,&quot;stockActual&quot;:null,&quot;stockMinimo&quot;:300.00,&quot;unidadMedida&quot;:{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;mililitros&quot;,&quot;abreviatura&quot;:&quot;ml&quot;},&quot;rubroInsumo&quot;:{&quot;id&quot;:3,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;subRubro&quot;:[],&quot;denominacion&quot;:&quot;rubroInsumo3&quot;}},&quot;costo&quot;:100.00},{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;cantidad&quot;:300.00,&quot;insumo&quot;:{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;leche&quot;,&quot;urlImagen&quot;:null,&quot;precioCompra&quot;:1500.00,&quot;stockActual&quot;:null,&quot;stockMinimo&quot;:100.00,&quot;unidadMedida&quot;:{&quot;id&quot;:1,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;mililitros&quot;,&quot;abreviatura&quot;:&quot;ml&quot;},&quot;rubroInsumo&quot;:{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;subRubro&quot;:[],&quot;denominacion&quot;:&quot;rubroInsumo2&quot;}},&quot;costo&quot;:100.00}],&quot;descripcion&quot;:&quot;hierva las papas, luego piselas y agregueles leche&quot;}},{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;Pizza&quot;,&quot;descripcion&quot;:&quot;Descripcion de un pizza&quot;,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:2000.00,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null},{&quot;id&quot;:3,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:null,&quot;descripcion&quot;:null,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:null,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:{&quot;id&quot;:2,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;subRubro&quot;:[],&quot;denominacion&quot;:&quot;RP1&quot;},&quot;receta&quot;:null},{&quot;id&quot;:4,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;Fideos&quot;,&quot;descripcion&quot;:&quot;Descripcion de unos fideos&quot;,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:2000.00,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null},{&quot;id&quot;:5,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;Nada&quot;,&quot;descripcion&quot;:&quot;Descripcion de nada&quot;,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:2000.00,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null},{&quot;id&quot;:6,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;P1&quot;,&quot;descripcion&quot;:null,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:null,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null},{&quot;id&quot;:8,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;Fideos&quot;,&quot;descripcion&quot;:&quot;Descripcion de unos fideos&quot;,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:2000.00,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null},{&quot;id&quot;:9,&quot;fechaAlta&quot;:null,&quot;fechaModificacion&quot;:null,&quot;fechaBaja&quot;:null,&quot;denominacion&quot;:&quot;Nada&quot;,&quot;descripcion&quot;:&quot;Descripcion de nada&quot;,&quot;tiempoEstimadoCocina&quot;:null,&quot;precioVenta&quot;:2000.00,&quot;costo&quot;:null,&quot;urlImagen&quot;:null,&quot;rubroProducto&quot;:null,&quot;receta&quot;:null}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,r1_0.id,r1_0.descripcion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r3_0.id,r3_0.denominacion,r3_0.fecha_alta,r3_0.fecha_baja,r3_0.fecha_modificacion,r3_0.id_rubro_padre,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 left join receta r1_0 on r1_0.id=p1_0.id_receta left join rubro_producto r2_0 on r2_0.id=p1_0.id_rubro_producto left join rubro_producto r3_0 on r3_0.id=r2_0.id_rubro_padre where p1_0.id=?
+Hibernate: insert into rubro_producto (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,p1_0.id_receta,p1_0.id_rubro_producto,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 join rubro_producto r1_0 on r1_0.id=p1_0.id_rubro_producto where r1_0.denominacion=? offset ? rows fetch first ? rows only
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select r1_0.id,r1_0.denominacion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r2_0.id_rubro_padre from rubro_producto r1_0 left join rubro_producto r2_0 on r2_0.id=r1_0.id_rubro_padre where r1_0.id=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+Hibernate: select s1_0.id_rubro_padre,s1_0.id,s1_0.denominacion,s1_0.fecha_alta,s1_0.fecha_baja,s1_0.fecha_modificacion from rubro_producto s1_0 where s1_0.id_rubro_padre=?
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.costo,p1_0.denominacion,p1_0.descripcion,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.precio_venta,r1_0.id,r1_0.descripcion,r1_0.fecha_alta,r1_0.fecha_baja,r1_0.fecha_modificacion,r2_0.id,r2_0.denominacion,r2_0.fecha_alta,r2_0.fecha_baja,r2_0.fecha_modificacion,r3_0.id,r3_0.denominacion,r3_0.fecha_alta,r3_0.fecha_baja,r3_0.fecha_modificacion,r3_0.id_rubro_padre,p1_0.tiempo_estimado_cocina,p1_0.url_imagen from producto p1_0 left join receta r1_0 on r1_0.id=p1_0.id_receta left join rubro_producto r2_0 on r2_0.id=p1_0.id_rubro_producto left join rubro_producto r3_0 on r3_0.id=r2_0.id_rubro_padre where p1_0.id=?
+Hibernate: update producto set costo=?,denominacion=?,descripcion=?,fecha_alta=?,fecha_baja=?,fecha_modificacion=?,precio_venta=?,id_receta=?,id_rubro_producto=?,tiempo_estimado_cocina=?,url_imagen=? where id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 25 oct. 2023 20:40:56</p>
+</div>
+</div>
+</body>
+</html>

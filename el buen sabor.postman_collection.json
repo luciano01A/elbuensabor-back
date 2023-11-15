@@ -1,0 +1,2771 @@
+{
+	"info": {
+		"_postman_id": "2f5d404d-a669-43b7-9c04-b19d8c297d22",
+		"name": "el buen sabor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28944233"
+	},
+	"item": [
+		{
+			"name": "facturacion",
+			"item": [
+				{
+					"name": "factura",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"totalVenta\" : 12000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "movimientos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/factura/movimientos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"factura",
+										"movimientos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "notaCredito",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"monto\" : 10000,\r\n    \"cliente\" : {\r\n        \"id\": 1,\r\n        \"fechaAlta\": null,\r\n        \"fechaModificacion\": null,\r\n        \"fechaBaja\": null,\r\n        \"email\": \"leo@gmail.com\",\r\n        \"password\": \"blabla\",\r\n        \"rol\": \"ADMINISTRADOR\",\r\n        \"nombre\": \"Lionel\",\r\n        \"apellido\": \"Messi\",\r\n        \"telefono\": \"21332\",\r\n        \"domicilios\": [\r\n            {\r\n                \"id\": 1,\r\n                \"fechaAlta\": null,\r\n                \"fechaModificacion\": null,\r\n                \"fechaBaja\": null,\r\n                \"calle\": \"calle falsa\",\r\n                \"numero\": 123,\r\n                \"codigoPostal\": 1234,\r\n                \"localidad\": null,\r\n                \"numeroDpto\": null,\r\n                \"pisoDpto\": null\r\n            }\r\n        ],\r\n        \"pedidos\": [\r\n            {\r\n                \"id\": 1,\r\n                \"fechaAlta\": null,\r\n                \"fechaModificacion\": null,\r\n                \"fechaBaja\": null,\r\n                \"fechaPedido\": null,\r\n                \"horaEstimadaFinalizacion\": null,\r\n                \"total\": null,\r\n                \"totalCosto\": null,\r\n                \"estadoActual\": \"EN_CAMINO\",\r\n                \"estados\": [],\r\n                \"tipoEnvio\": null,\r\n                \"formaPago\": \"MERCADO_PAGO\",\r\n                \"domicilioEntrega\": {\r\n                    \"id\": 1,\r\n                    \"fechaAlta\": null,\r\n                    \"fechaModificacion\": null,\r\n                    \"fechaBaja\": null,\r\n                    \"calle\": \"calle falsa\",\r\n                    \"numero\": 123,\r\n                    \"codigoPostal\": 1234,\r\n                    \"localidad\": null,\r\n                    \"numeroDpto\": null,\r\n                    \"pisoDpto\": null\r\n                }\r\n            }\r\n        ],\r\n        \"notasCredito\": []\r\n    }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "movimientos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/notaCredito/movimientos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"notaCredito",
+										"movimientos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "detalleFactura",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cantidad\": 5,\r\n    \"subtotal\": 80\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/facturacion/detalleFactura/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"facturacion",
+										"detalleFactura",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pedidos",
+			"item": [
+				{
+					"name": "pedido",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"total\" : 1300,\r\n    \"totalCosto\" : 800\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cambiar estado",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/cambiarEstado",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"cambiarEstado"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscar por estado",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/pedido/buscar",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"pedido",
+										"buscar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "detallePedido",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cantidad\": 5,\r\n    \"subtotal\": 200,\r\n    \"subtotalCosto\" : 1000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/pedidos/detallePedido/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"pedidos",
+										"detallePedido",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "usuario",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/usuario",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/usuario/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/usuario/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n{\r\n\r\n    \"fechaAlta\": \"2023-10-24T17:38:18.793Z\",\r\n    \"fechaModificacion\": \"2023-10-24T17:38:18.793Z\",\r\n    \"fechaBaja\": null,\r\n    \"username\": \"Pepito\",\r\n    \"auth0id\": \"Ejemplo_auth0id\"\r\n}"
+								},
+								"url": {
+									"raw": "http://localhost:8080/api/v1/usuarios/usuario",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/usuario/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/usuario/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"usuario",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "persona",
+					"item": [
+						{
+							"name": "1. GET",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/usuarios/persona",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/persona/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/persona/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"ejemplo@correo.com\",\r\n  \"password\": \"contraseña123\",\r\n  \"rol\": \"CLIENTE\",\r\n  \"nombre\": \"Juan\",\r\n  \"apellido\": \"Pérez\",\r\n  \"telefono\": \"1234567890\",\r\n  \"domicilios\": [\r\n    {\r\n      \"calle\": \"Calle Principal\",\r\n      \"numero\": 123,\r\n      \"codigoPostal\": 1234,\r\n      \"localidad\": \"Ciudad Ejemplo\",\r\n      \"numeroDpto\": null,\r\n      \"pisoDpto\": null\r\n    }\r\n  ]\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/persona",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"email\": \"nuevoEjemplo@correo.com\"\r\n\r\n\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/persona/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/persona/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ranking",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/usuarios/persona/ranking",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"ranking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cambiar datos",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/usuarios/persona/cambiarDatos",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"cambiarDatos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cambiar contraseña",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/usuarios/persona/cambiarContraseña",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"persona",
+										"cambiarContraseña"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "domicilio",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"calle\": \"Calle Principal\",\r\n  \"numero\": 123,\r\n  \"codigoPostal\": 1234,\r\n  \"localidad\": \"Ciudad Ejemplo\",\r\n  \"numeroDpto\": null,\r\n  \"pisoDpto\": null,\r\n  \"persona\": {\r\n    \"id\": 1\r\n  }\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 1,\r\n    \"calle\": \"aaaaaaa\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio/1",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/usuarios/domicilio/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"usuarios",
+										"domicilio",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "productos",
+			"item": [
+				{
+					"name": "compraInsumo",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"totalCompra\" : 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "movimientos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/compraInsumo/movimientos",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"compraInsumo",
+										"movimientos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "detalleCompra",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"monto\" : 2000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleCompra/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleCompra",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "detalleReceta",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cantidad\" : 100,\r\n    \"costo\" : 1300\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/detalleReceta/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"detalleReceta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "insumo",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"denominacion\" : \"lechuga\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "stock bajo",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/insumo/stockBajo",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"insumo",
+										"stockBajo"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "producto",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"denominacion\": \"Pizza \",\r\n  \"descripcion\": \"Pizza con salsa de tomate y queso\",\r\n  \"tiempoEstimadoCocina\": 23,\r\n  \"precioVenta\": 9.99,\r\n  \"costo\": 100\r\n  \r\n}\r\n"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "por rubro",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/porRubro",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"porRubro"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ranking",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/ranking",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"ranking"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buscar",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/producto/buscar",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"producto",
+										"buscar"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "receta",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descripcion\" : \"batir 2 hs\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/receta/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"receta",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rubroInsumo",
+					"item": [
+						{
+							"name": "1. GET",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"descripcion\" : \"batir 2 hs\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo/paged",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"denominacion\" : \"verduras\",\r\n    \"subRubro\" : null,\r\n    \"rubroPadre\" : null\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/api/v1/productos/rubroInsumo/{id}",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroInsumo",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rubroProducto",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"denominacion\": \"Comida\"\r\n\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/rubroProducto/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"rubroProducto",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "unidadMedida",
+					"item": [
+						{
+							"name": "1. GET",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "2. GET Paged",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida/paged",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida",
+										"paged"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3. GET One",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "4. POST",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"denominacion\": \"Kilogramo\",\r\n  \"abreviatura\": \"kg\"\r\n}"
+								},
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5. PUT",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "6. DELETE",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/api/v1/productos/unidadMedida/{id}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"v1",
+										"productos",
+										"unidadMedida",
+										"{id}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8080",
+			"type": "string"
+		}
+	]
+}

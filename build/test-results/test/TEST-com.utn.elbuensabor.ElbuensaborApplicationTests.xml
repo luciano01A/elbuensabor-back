@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.ElbuensaborApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T23:40:55" hostname="DESKTOP-U8E734G" time="0.007">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.utn.elbuensabor.ElbuensaborApplicationTests" time="0.007"/>
+  <system-out><![CDATA[2023-10-25T20:40:52.722-03:00  INFO 17016 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.utn.elbuensabor.ElbuensaborApplicationTests]: ElbuensaborApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-25T20:40:52.761-03:00  INFO 17016 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.utn.elbuensabor.ElbuensaborApplication for test class com.utn.elbuensabor.ElbuensaborApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-25T20:40:52.831-03:00  INFO 17016 --- [    Test worker] c.u.e.ElbuensaborApplicationTests        : Starting ElbuensaborApplicationTests using Java 17.0.8 with PID 17016 (started by Fran in C:\Users\Fran\Escritorio\elbuensabor - back\elbuensabor-sprint3)
+2023-10-25T20:40:52.832-03:00  INFO 17016 --- [    Test worker] c.u.e.ElbuensaborApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2023-10-25T20:40:53.593-03:00  INFO 17016 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-25T20:40:53.737-03:00  INFO 17016 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144 ms. Found 17 JPA repository interfaces.
+2023-10-25T20:40:53.941-03:00  INFO 17016 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-25T20:40:53.972-03:00  INFO 17016 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-25T20:40:53.972-03:00  INFO 17016 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-25T20:40:53.975-03:00  INFO 17016 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-10-25T20:40:53.976-03:00  INFO 17016 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:./betodb user=SA
+2023-10-25T20:40:53.976-03:00  INFO 17016 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-10-25T20:40:54.118-03:00  INFO 17016 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-25T20:40:54.510-03:00  INFO 17016 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-25T20:40:54.552-03:00  INFO 17016 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-25T20:40:55.571-03:00  WARN 17016 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-25T20:40:55.812-03:00  INFO 17016 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:./betodb'
+2023-10-25T20:40:55.850-03:00  INFO 17016 --- [    Test worker] c.u.e.ElbuensaborApplicationTests        : Started ElbuensaborApplicationTests in 3.081 seconds (process running for 35.691)
+Hibernate: insert into rubro_insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into rubro_insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into rubro_insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into unidad_medida (abreviatura,denominacion,fecha_alta,fecha_baja,fecha_modificacion,id) values (?,?,?,?,?,default)
+Hibernate: insert into unidad_medida (abreviatura,denominacion,fecha_alta,fecha_baja,fecha_modificacion,id) values (?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into insumo (denominacion,fecha_alta,fecha_baja,fecha_modificacion,precio_compra,id_rubro_insumo,stock_actual,stock_minimo,id_unidad_medida,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into rubro_producto (denominacion,fecha_alta,fecha_baja,fecha_modificacion,id_rubro_padre,id) values (?,?,?,?,?,default)
+Hibernate: insert into receta (descripcion,fecha_alta,fecha_baja,fecha_modificacion,id) values (?,?,?,?,default)
+Hibernate: insert into detalle_receta (cantidad,costo,fecha_alta,fecha_baja,fecha_modificacion,id_insumo,id_receta,id) values (?,?,?,?,?,?,?,default)
+Hibernate: insert into detalle_receta (cantidad,costo,fecha_alta,fecha_baja,fecha_modificacion,id_insumo,id_receta,id) values (?,?,?,?,?,?,?,default)
+Hibernate: insert into producto (costo,denominacion,descripcion,fecha_alta,fecha_baja,fecha_modificacion,precio_venta,id_receta,id_rubro_producto,tiempo_estimado_cocina,url_imagen,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into detalle_compra (cantidad,id_compra_insumo,fecha_alta,fecha_baja,fecha_modificacion,id_insumo,monto,id) values (?,?,?,?,?,?,?,default)
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into domicilio (calle,codigo_postal,fecha_alta,fecha_baja,fecha_modificacion,localidad,numero,numero_vivienda,id_persona,piso_vivienda,id) values (?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into pedido (id_usuario,id_domicilio_entrega,estado_actual,fecha_alta,fecha_baja,fecha_modificacion,fecha_pedido,forma_pago,hora_estimada_finalizacion,tipo_envio,total,total_costo,id) values (?,?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into detalle_factura (cantidad,id_factura,fecha_alta,fecha_baja,fecha_modificacion,id_producto,subtotal,id) values (?,?,?,?,?,?,?,default)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.integration.FacturaControllerIntegration" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T23:40:56" hostname="DESKTOP-U8E734G" time="0.053">
+  <properties/>
+  <testcase name="testMovimientos()" classname="com.utn.elbuensabor.integration.FacturaControllerIntegration" time="0.053"/>
+  <system-out><![CDATA[Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into factura (fecha_alta,fecha_baja,fecha_facturacion,fecha_modificacion,forma_pago,mp_merchant_order_id,mp_payment_id,mp_payment_type,mp_preference_id,id_pedido,total_venta,id) values (?,?,?,?,?,?,?,?,?,?,?,default)
+Hibernate: select sum(f1_0.total_venta) from factura f1_0 where f1_0.fecha_facturacion between ? and ?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

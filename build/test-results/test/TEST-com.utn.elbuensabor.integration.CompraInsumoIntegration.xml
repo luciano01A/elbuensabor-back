@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.integration.CompraInsumoIntegration" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-25T23:40:55" hostname="DESKTOP-U8E734G" time="0.065">
+  <properties/>
+  <testcase name="testMovimientos()" classname="com.utn.elbuensabor.integration.CompraInsumoIntegration" time="0.065"/>
+  <system-out><![CDATA[Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: insert into compra_insumo (fecha_alta,fecha_baja,fecha_modificacion,total_compra,id) values (?,?,?,?,default)
+Hibernate: select sum(c1_0.total_compra) from compra_insumo c1_0 where c1_0.fecha_alta between ? and ?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

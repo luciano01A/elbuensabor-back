@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.utn.elbuensabor.integration.PersonaControllerIntegration" tests="8" skipped="0" failures="2" errors="0" timestamp="2023-10-25T23:40:51" hostname="DESKTOP-U8E734G" time="0.938">
+  <properties/>
+  <testcase name="testCambiarContraseña()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.112"/>
+  <testcase name="testCambiarDatos()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.133"/>
+  <testcase name="testRanking()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.111"/>
+  <testcase name="testGetAllWithPageable()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.124"/>
+  <testcase name="testDelete()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.118"/>
+  <testcase name="testGetAll()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.17">
+    <failure message="java.lang.AssertionError: JSON path &quot;$[1].apellido&quot;&#13;&#10;Expected: is &quot;Perez&quot;&#13;&#10;     but: was &quot;Honguito&quot;" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$[1].apellido&quot;
+Expected: is &quot;Perez&quot;
+     but: was &quot;Honguito&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.utn.elbuensabor.integration.PersonaControllerIntegration.testGetAll(PersonaControllerIntegration.java:223)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testGetOne()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.048">
+    <failure message="java.lang.AssertionError: JSON path &quot;$.apellido&quot;&#13;&#10;Expected: is &quot;Perez&quot;&#13;&#10;     but: was &quot;Honguito&quot;" type="java.lang.AssertionError">java.lang.AssertionError: JSON path &quot;$.apellido&quot;
+Expected: is &quot;Perez&quot;
+     but: was &quot;Honguito&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.util.JsonPathExpectationsHelper.assertValue(JsonPathExpectationsHelper.java:74)
+	at org.springframework.test.web.servlet.result.JsonPathResultMatchers.lambda$value$0(JsonPathResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.utn.elbuensabor.integration.PersonaControllerIntegration.testGetOne(PersonaControllerIntegration.java:194)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="testUpdate()" classname="com.utn.elbuensabor.integration.PersonaControllerIntegration" time="0.101"/>
+  <system-out><![CDATA[Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: update persona set apellido=?,email=?,fecha_alta=?,fecha_baja=?,fecha_modificacion=?,nombre=?,password=?,rol=?,telefono=? where id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono,count(p2_0.id),sum(f1_0.total_venta) from persona p1_0 left join pedido p2_0 on p1_0.id=p2_0.id_usuario,factura f1_0 where f1_0.id_pedido=p2_0.id and f1_0.fecha_facturacion between ? and ? offset ? rows fetch first ? rows only
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 order by p1_0.nombre offset ? rows fetch first ? rows only
+Hibernate: select count(p1_0.id) from persona p1_0
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select count(*) from persona p1_0 where p1_0.id=?
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: delete from persona where id=?
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/usuarios/persona
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.utn.elbuensabor.controllers.usuarios.PersonaController
+           Method = com.utn.elbuensabor.controllers.usuarios.PersonaController#getAll()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"id":1,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"ph@mail.com","password":"blabla","rol":"ADMINISTRADOR","nombre":"Pedro","apellido":"Hongo","telefono":"73482834","domicilios":[{"id":1,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"calle":"calle falsa","numero":123,"codigoPostal":1234,"localidad":null,"numeroDpto":null,"pisoDpto":null}],"pedidos":[{"id":1,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"fechaPedido":null,"horaEstimadaFinalizacion":null,"total":null,"totalCosto":null,"estadoActual":"COMPLETADO","tipoEnvio":null,"formaPago":"MERCADO_PAGO","domicilioEntrega":{"id":1,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"calle":"calle falsa","numero":123,"codigoPostal":1234,"localidad":null,"numeroDpto":null,"pisoDpto":null}}],"notasCredito":[]},{"id":2,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"ph@mail.com","password":"abcd","rol":null,"nombre":"Pepe","apellido":"Honguito","telefono":"12345678","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":3,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"ph@mail.com","password":"abcd","rol":"CLIENTE","nombre":"Pepe","apellido":"Honguito","telefono":"12345678","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":4,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"ph@mail.com","password":"abcd","rol":"CLIENTE","nombre":"Pepe","apellido":"Honguito","telefono":"12345678","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":5,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"Ejemplo@Email.com","password":"1234","rol":"CLIENTE","nombre":"Pepe","apellido":"Perez","telefono":"12323124","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":6,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"Ejemplo2@Email.com","password":"5678","rol":"ADMINISTRADOR","nombre":"Juan","apellido":"Lopez","telefono":"98765432","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":8,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"Ejemplo@Email.com","password":"1234","rol":"CLIENTE","nombre":"Pepe","apellido":"Perez","telefono":"12323124","domicilios":[],"pedidos":[],"notasCredito":[]},{"id":9,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"Ejemplo2@Email.com","password":"5678","rol":"ADMINISTRADOR","nombre":"Juan","apellido":"Lopez","telefono":"98765432","domicilios":[],"pedidos":[],"notasCredito":[]}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/usuarios/persona/2
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.utn.elbuensabor.controllers.usuarios.PersonaController
+           Method = com.utn.elbuensabor.controllers.usuarios.PersonaController#getOne(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"id":2,"fechaAlta":null,"fechaModificacion":null,"fechaBaja":null,"email":"ph@mail.com","password":"abcd","rol":null,"nombre":"Pepe","apellido":"Honguito","telefono":"12345678","domicilios":[],"pedidos":[],"notasCredito":[]}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: insert into persona (apellido,email,fecha_alta,fecha_baja,fecha_modificacion,nombre,password,rol,telefono,id) values (?,?,?,?,?,?,?,?,?,default)
+Hibernate: select p1_0.id,p1_0.apellido,p1_0.email,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.nombre,p1_0.password,p1_0.rol,p1_0.telefono from persona p1_0 where p1_0.id=?
+Hibernate: update persona set apellido=?,email=?,fecha_alta=?,fecha_baja=?,fecha_modificacion=?,nombre=?,password=?,rol=?,telefono=? where id=?
+Hibernate: select d1_0.id_persona,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,d1_0.piso_vivienda from domicilio d1_0 where d1_0.id_persona=?
+Hibernate: select p1_0.id_usuario,p1_0.id,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo from pedido p1_0 left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where p1_0.id_usuario=?
+Hibernate: select n1_0.cliente_id,n1_0.id,f1_0.id,f1_0.fecha_alta,f1_0.fecha_baja,f1_0.fecha_facturacion,f1_0.fecha_modificacion,f1_0.forma_pago,f1_0.mp_merchant_order_id,f1_0.mp_payment_id,f1_0.mp_payment_type,f1_0.mp_preference_id,p1_0.id,c2_0.id,c2_0.apellido,c2_0.email,c2_0.fecha_alta,c2_0.fecha_baja,c2_0.fecha_modificacion,c2_0.nombre,c2_0.password,c2_0.rol,c2_0.telefono,d1_0.id,d1_0.calle,d1_0.codigo_postal,d1_0.fecha_alta,d1_0.fecha_baja,d1_0.fecha_modificacion,d1_0.localidad,d1_0.numero,d1_0.numero_vivienda,p2_0.id,p2_0.apellido,p2_0.email,p2_0.fecha_alta,p2_0.fecha_baja,p2_0.fecha_modificacion,p2_0.nombre,p2_0.password,p2_0.rol,p2_0.telefono,d1_0.piso_vivienda,p1_0.estado_actual,p1_0.fecha_alta,p1_0.fecha_baja,p1_0.fecha_modificacion,p1_0.fecha_pedido,p1_0.forma_pago,p1_0.hora_estimada_finalizacion,p1_0.tipo_envio,p1_0.total,p1_0.total_costo,f1_0.total_venta,n1_0.fecha_alta,n1_0.fecha_baja,n1_0.fecha_modificacion,n1_0.total_monto from nota_credito n1_0 left join factura f1_0 on f1_0.id=n1_0.factura_id left join pedido p1_0 on p1_0.id=f1_0.id_pedido left join persona c2_0 on c2_0.id=p1_0.id_usuario left join domicilio d1_0 on d1_0.id=p1_0.id_domicilio_entrega left join persona p2_0 on p2_0.id=d1_0.id_persona where n1_0.cliente_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
